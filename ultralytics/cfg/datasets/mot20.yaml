@@ -1,0 +1,23 @@
+# MOT20数据集配置文件
+# 用于YOLO11-JDE训练和验证
+
+# 数据集路径（相对路径或绝对路径）
+path: /root/autodl-tmp/YOLOTrack_MOT20  # 服务器上数据集根目录
+train: images/train  # 训练集图片路径
+val: images/val      # 验证集图片路径
+test: images/test    # 测试集图片路径（可选）
+
+# 类别
+nc: 1  # 类别数量
+names:
+  0: person  # 行人
+
+# 数据集信息
+#dataset: MOT20
+#task: jde  # Joint Detection and Embedding
+
+# 训练参数建议
+# epochs: 100
+# batch: 16
+# imgsz: 1280
+# close_mosaic: 0  # JDE必须为0
